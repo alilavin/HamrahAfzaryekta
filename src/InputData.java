@@ -3,8 +3,21 @@ import org.junit.Test;
 
 import java.util.Scanner;
 
+/**
+ * <h1>Get Data from User and check it</h1>
+ *
+ * @author  Ali Nourmohammadi
+ * @version 1.0
+ * @since   2022-08-30
+ */
+
 public class InputData {
 
+    /**
+     * <p>Get Data from User</p>
+     *
+     * @return String this return can be digit or "Exit" or etc
+     */
     public static String getNumber(){
         String input;
 
@@ -17,6 +30,11 @@ public class InputData {
         return input;
     }
 
+    /**
+     * <p>Check input data for sure that it's a number</p>
+     *
+     * @return boolean if our input data is a number return true otherwise return false
+     */
     public static boolean isNumber(String input){
         try {
             Integer.parseInt(input);
